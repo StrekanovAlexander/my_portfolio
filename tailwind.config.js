@@ -7,9 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Merriweather', 'serif'],
-        display: ['Playfair Display', 'serif'],
-        roboto: ["Roboto", "sans-serif"],
+        roboto: ["Roboto Flex", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },

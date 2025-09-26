@@ -1,21 +1,17 @@
 export const headerContent = {
   de: {
-    firstName: "Oleksandr",
-    lastName: "Strekanov",
-    intro: "Frontend-Entwickler, spezialisiert auf SPAs",
+    name: "Oleksandr Strekanov",
+    intro: "Fullstack Entwickler",
     description: "lorem ipsum",
   },
   ua: {
-    firstName: "Олександр",
-    lastName: "Стреканов",
-    intro: "Фронтенд-розробник, спеціалізація SPA",
+    name: "Олександр Стреканов",
+    intro: "Fullstack Розробник",
     description: "Подробнiше",
   },
-  
-    en: {
-    firstName: "Oleksandr",
-    lastName: "Strekanov",
-    intro: "Frontend developer specializing in SPA",
+  en: {
+    name: "Oleksandr Strekanov",
+    intro: "Fullstack Developer",
     description: "Description",
   },
 };
