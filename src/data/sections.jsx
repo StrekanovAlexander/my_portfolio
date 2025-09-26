@@ -68,8 +68,8 @@ export const sections = {
           <p className="text-gray-700 text-sm py-2">
             Derzeit arbeite ich an dem Projekt Finping. Es handelt sich um einen SaaS-Service zur Beobachtung von Devisen- und Rohstoffmärkten. Dabei verwende ich Node.js, Sequelize, Express.js, React und Tailwind CSS. Als Market Data APIs arbeite
             ich mit Yahoo Finance, CoinGecko und FXRates. 
-            <span className="block my-1"><a className="text-red-700" href="https://www.finping.space">https://www.finping.space</a></span>
-            <span className="block my-1">https://github.com/StrekanovAlexander/saas-finping</span>
+            <span className="block my-1"><a className="text-red-700" href="https://www.finping.space" target="_blank">https://www.finping.space</a></span>
+            <span className="block my-1"><a className="text-red-700" href="https://github.com/StrekanovAlexander/saas-finping" target="_blank">https://github.com/StrekanovAlexander/saas-finping</a></span>
           </p>
         </>,
         <>
@@ -132,74 +132,94 @@ export const sections = {
       left: [
         
         <>
-         
+          <h3 className="font-roboto font-extrabold uppercase mb-1">
+            Programmiersprachen und Plattformen
+          </h3>
+          
+          <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 my-1">
+            <li>C, Javascript, Delphi</li>
+            <li>MySQL, Firebird Database</li>
+            <li>Node.js, Express.js, React</li>
+            <li>HTML, CSS</li>
+          </ul>
         </>, 
-        
-        
-        "Curabitur ac augue..."
       ],
-      right: ["Praesent suscipit diam...", "Morbi feugiat ligula..."],
+      right: [
+        <>
+          <h3 className="font-roboto font-extrabold uppercase mb-1">
+            Berufskenntnisse
+          </h3>
+          
+          <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 my-1">
+            <li>Objektorientierte Programmierung (OO-Programmierung)</li>
+            <li>Web-Applikationen (Entwicklung und Programmierung)</li>
+            <li>Datenbank Borland Database Engine</li>
+            <li>Git</li>
+            <li>MS Office</li>
+          </ul>
+        </>,
+      ],
     },
     
     projects: {
       title: "Persönliche Projekte",
       icon: Rocket,
-      left: ["Lorem ipsum dolor sit amet...", "Ut pretium justo..."],
-      right: ["Aliquam erat volutpat...", "Morbi ac justo..."],
+      left: ["Diese Information ist nicht fertig..."],
+      right: ["Diese Information ist nicht fertig..."],
     },
   },
   ua: {
     education: {
       title: "Освіта",
       icon: GraduationCap,
-      left: ["Lorem ipsum dolor sit amet...", "Fusce non massa in tortor..."],
-      right: ["Nullam dignissim...", "Sed commodo lorem..."],
+      left: ["Далі буде...", "Далі буде..."],
+      right: ["Далі буде...", "Далі буде..."],
     },
     experience: {
       title: "Досвід роботи",
       icon: Briefcase,
-      left: ["Lorem ipsum dolor sit amet...", "Donec dapibus odio..."],
-      right: ["Pellentesque habitant...", "Vestibulum non velit..."],
+      left: ["Далі буде...", "Далі буде..."],
+      right: ["Далі буде...", "Далі буде..."],
     },
     skills: {
       title: "Навички",
       icon: Laptop,
-      left: ["Lorem ipsum dolor sit amet...", "Curabitur ac augue..."],
-      right: ["Praesent suscipit diam...", "Morbi feugiat ligula..."],
+      left: ["Далі буде...", "Далі буде..."],
+      right: ["Далі буде...", "Далі буде..."],
     },
     
     projects: {
       title: "Особисті проєкти",
       icon: Rocket,
-      left: ["Lorem ipsum dolor sit amet...", "Ut pretium justo..."],
-      right: ["Aliquam erat volutpat...", "Morbi ac justo..."],
+      left: ["Далі буде...", "Далі буде..."],
+      right: ["Далі буде...", "Далі буде..."],
     },
   },
   en: {
     education: {
       title: "Education",
       icon: GraduationCap,
-      left: ["Lorem ipsum dolor sit amet...", "Fusce non massa in tortor..."],
-      right: ["Nullam dignissim...", "Sed commodo lorem..."],
+      left: ["To be continued...", "To be continued..."],
+      right: ["To be continued...", "To be continued..."],
     },
     experience: {
       title: "Experience",
       icon: Briefcase,
-      left: ["Lorem ipsum dolor sit amet...", "Donec dapibus odio..."],
-      right: ["Pellentesque habitant...", "Vestibulum non velit..."],
+      left: ["To be continued...", "To be continued..."],
+      right: ["To be continued...", "To be continued..."],
     },
     skills: {
       title: "Skills",
       icon: Laptop,
-      left: ["Lorem ipsum dolor sit amet...", "Curabitur ac augue..."],
-      right: ["Praesent suscipit diam...", "Morbi feugiat ligula..."],
+      left: ["To be continued...", "To be continued..."],
+      right: ["To be continued...", "To be continued..."],
     },
     
     projects: {
       title: "Personal Projects",
       icon: Rocket,
-      left: ["Lorem ipsum dolor sit amet...", "Ut pretium justo..."],
-      right: ["Aliquam erat volutpat...", "Morbi ac justo..."],
+      left: ["To be continued...", "To be continued..."],
+      right: ["To be continued...", "To be continued..."],
     },
   },
 };
