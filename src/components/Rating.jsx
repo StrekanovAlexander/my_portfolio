@@ -7,7 +7,7 @@ export default function Rating({ value = 0, max = 6 }) {
                     <span
                         key={i}
                         className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                            score <= value ? "bg-blue-400" : "bg-gray-300 dark:bg-gray-600"
+                            score <= value ? "bg-gray-600" : "bg-gray-300 dark:bg-gray-400"
                         }`}
                     />
                 );

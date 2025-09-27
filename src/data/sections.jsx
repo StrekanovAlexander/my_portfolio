@@ -7,7 +7,7 @@ import Rating from "../components/Rating.jsx";
 export const sections = {
   de: {
     education: {
-      title: "AUS- UND FORTBILDUNG",
+      title: "AUSBILDUNG",
       icon: GraduationCap,
       
       left: [
@@ -50,7 +50,7 @@ export const sections = {
       ]
     },
     experience: {
-      title: "BERUFLICHE ERFAHRUNGEN",
+      title: "ERFAHRUNGEN",
       icon: Briefcase,
       left: [
         <BlockInfo 
@@ -172,9 +172,8 @@ export const sections = {
         />,
       ],
     },
-    
     projects: {
-      title: "Persönliche Projekte",
+      title: "Meine Projekte",
       icon: Rocket,
       left: [
         <BlockInfo2 
@@ -192,56 +191,367 @@ export const sections = {
   },
   ua: {
     education: {
-      title: "Освіта",
+      title: "ОСВІТА ТА КУРСИ",
       icon: GraduationCap,
-      left: ["Далі буде...", "Далі буде..."],
-      right: ["Далі буде...", "Далі буде..."],
+      left: [
+        <BlockInfo 
+          header="УЧАСТЬ У ПРОГРАМІ P.I.A. W.E.B."
+          period="08.2025 – сьогодні"
+          description="bfz gGmbH Бад-Кіссінген"
+        />,
+        <BlockInfo 
+          header="МОВНИЙ ТА ІНТЕГРАЦІЙНИЙ КУРС"
+          period="07.2024 – 07.2025"
+          description="bfz gGmbH Бад-Кіссінген"
+          list={[
+            "Отримання сертифіката німецької мови B1", 
+            "Життя в Німеччині"
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo 
+          header="НАВЧАННЯ ЗА СПЕЦІАЛЬНІСТЮ КОМП'ЮТЕРНА ІНЖЕНЕРІЯ"
+          period="09.2011 – 05.2015"
+          description="Національний технічний університет, Запоріжжя, Україна"
+          list={[
+            "Диплом",
+            "Акцент на мовах програмування C та Java",
+            "Цифрова автоматизація"
+          ]}
+        />,    
+        <BlockInfo 
+          header="КУРС ПРОГРАМУВАННЯ НА C"
+          period="07.2002 – 08.2002"
+          description="Центр комп'ютерної освіти при Московському державному технічному університеті, Росія"
+        />,
+        <BlockInfo 
+          header="КУРС ПРОГРАМУВАННЯ БАЗ ДАНИХ DELPHI 4.0/5.0"
+          period="06.2001 – 07.2001"
+          description="Центр комп'ютерної освіти при Московському державному технічному університеті, Росія"
+        />
+      ]
     },
     experience: {
-      title: "Досвід роботи",
+      title: "ДОСВІД РОБОТИ",
       icon: Briefcase,
-      left: ["Далі буде...", "Далі буде..."],
-      right: ["Далі буде...", "Далі буде..."],
+      left: [
+        <BlockInfo 
+          header="ІНЖЕНЕР-ПРОГРАМІСТ ТА СИСТЕМНИЙ АДМІНІСТРАТОР"
+          period="01.2015 – сьогодні (віддалена робота з 2022)"
+          description="ПРАТ ЗЗРК, просп. Соборний 158-210, Запоріжжя, Україна"
+          list={[
+            "Розробка та підтримка застосунку для обліку робочого часу (Delphi, Firebird Database)", 
+            "Підтримка корпоративного сайту (HTML, CSS, Javascript, PHP)",
+            "Додаткові обов’язки системного адміністратора з 02.2017"
+          ]}
+        />,
+        <BlockInfo 
+          header="РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ"
+          period="10.2011 – 12.2014"
+          description="Malenkij Paris GmbH, Москва, Росія"
+          list={[
+            "Розробка онлайн-магазину (PHP, HTML, CSS, Javascript)", 
+          ]}
+        />,
+        <BlockInfo 
+          header="СИСТЕМНИЙ АДМІНІСТРАТОР"
+          period="12.2007 – 07.2011"
+          description="Комунальне підприємство «Наш Дім», Дніпрорудне, Україна"
+          list={[
+            "Підтримка локальних мереж (FoxPro)", 
+            "Близько 50 комп'ютерних робочих місць", 
+            "Програмне забезпечення FoxPro", 
+            "Робота на пів ставки", 
+          ]}
+        />,
+        <BlockInfo 
+          header="РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ"
+          period="11.2006 – 10.2009"
+          description="ТОВ «Аркоб», Дніпрорудне, Україна"
+          list={[
+            "Розробка та підтримка програм для розрахунку споживання електроенергії в архітектурній сфері (Delphi, Firebird Database)", 
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo 
+          header="РОЗРОБНИК ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ"
+          period="09.2000 – 07.2006"
+          description="Werkol GmbH, Москва, Росія"
+          list={[
+            "Розробка та підтримка онлайн-магазину для продажу гігієнічних та косметичних товарів (Delphi, Interbase)", 
+          ]}
+        />,
+        <BlockInfo 
+          header="IT-АСИСТЕНТ ТА ПРОГРАМІСТ"
+          period="09.1994 – 05.2000"
+          description="Фірма Wotinov, Москва, Росія"
+          list={[
+            "Робота на складі та пакувальному відділі", 
+            "Перший досвід з FoxPro", 
+            "Розробка ПЗ для управління замовленнями та складом у сфері оптової торгівлі косметикою", 
+          ]}
+        />,
+        <BlockInfo 
+          header="ЕЛЕКТРИК"
+          period="07.1990 – 08.1994"
+          description="ПРАТ ЗЗРК, Мала Білозерка, Україна"
+          list={[
+            "Загальні роботи з технічного обслуговування та ремонту", 
+            "Монтаж освітлювальних систем", 
+          ]}
+        />,
+        <BlockInfo 
+          header="ЕЛЕКТРИК"
+          period="06.1989 – 05.1990"
+          description="Молокозавод, Дніпрорудне, Україна"
+          list={[
+            "Обслуговування та ремонт обладнання для переробки молока та виготовлення сиру", 
+            "Заміна запчастин", 
+          ]}
+        />,
+      ],
     },
     skills: {
-      title: "Навички",
+      title: "НАВИЧКИ",
       icon: Laptop,
-      left: ["Далі буде...", "Далі буде..."],
-      right: ["Далі буде...", "Далі буде..."],
+      left: [
+        <BlockInfo2 
+          title="Мови програмування"
+          list={[
+            "Javascript, Delphi, C",
+            "MySQL, Firebird Database",
+            "Node.js, Express.js, React",
+            "HTML, CSS"
+          ]}
+        />,
+        <BlockInfo2 
+          title="Професійні знання"
+          list={[
+            "Веб-застосунки (Backend і Frontend)",
+            "SQL, реляційні БД, процедури, тригери тощо",
+            "Об'єктно-орієнтоване програмування",
+            "Git"
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo3 
+          title="Мови"
+          list={[
+            { title: "Німецька", rating: 4 },
+            { title: "Українська", rating: 6 },
+            { title: "Російська", rating: 6 },
+            { title: "Англійська", rating: 3 },
+          ]}
+        />,
+        <BlockInfo3 
+          title="Загальні IT"
+          list={[
+            { title: "MS-Office", rating: 5 },
+            { title: "Photoshop", rating: 4 },
+          ]}
+        />,
+      ],
     },
-    
     projects: {
       title: "Особисті проєкти",
       icon: Rocket,
-      left: ["Далі буде...", "Далі буде..."],
-      right: ["Далі буде...", "Далі буде..."],
+      left: [
+        <BlockInfo2 
+          title="ФРИЛАНС-РОБОТА ЯК ПРОГРАМІСТ"
+          description="Наразі працюю над проєктом Finping. Це SaaS-сервіс для моніторингу валютних і товарних ринків. Використовую Node.js, Sequelize, Express.js, React та Tailwind CSS. Як джерела даних — Yahoo Finance, CoinGecko та FXRates"
+          list={[
+            <a className="text-red-700" href="https://www.finping.space" target="_blank">https://www.finping.space</a>,
+            <a className="text-red-700" href="https://github.com/StrekanovAlexander/saas-finping" target="_blank">https://github.com/StrekanovAlexander/saas-finping</a>
+          ]}
+        />,
+      ],
+      right: ["..."],
     },
   },
   en: {
     education: {
-      title: "Education",
+      title: "EDUCATION AND COURSES",
       icon: GraduationCap,
-      left: ["To be continued...", "To be continued..."],
-      right: ["To be continued...", "To be continued..."],
+
+      left: [
+        <BlockInfo 
+          header="PARTICIPATION IN THE P.I.A. W.E.B. PROGRAM"
+          period="08.2025 – present"
+          description="bfz gGmbH Bad Kissingen"
+        />,
+        <BlockInfo 
+          header="LANGUAGE AND INTEGRATION COURSE"
+          period="07.2024 – 07.2025"
+          description="bfz gGmbH Bad Kissingen"
+          list={[
+            "Obtained German Certificate B1", 
+            "Life in Germany"
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo 
+          header="COMPUTER ENGINEERING STUDIES"
+          period="09.2011 – 05.2015"
+          description="National Technical University Zaporizhzhia, Ukraine"
+          list={[
+            "Degree: Diploma", 
+            "Focus on programming languages C and Java",
+            "Digital Automation"
+          ]}
+        />,    
+        <BlockInfo 
+          header="PROGRAMMING COURSE IN C"
+          period="07.2002 – 08.2002"
+          description="Computer Training Center at Moscow State Technical University, Russia"
+        />,
+        <BlockInfo 
+          header="DATABASE PROGRAMMING COURSE WITH DELPHI 4.0/5.0"
+          period="06.2001 – 07.2001"
+          description="Computer Training Center at Moscow State Technical University, Russia"
+        />
+      ]
     },
     experience: {
-      title: "Experience",
+      title: "WORK EXPERIENCE",
       icon: Briefcase,
-      left: ["To be continued...", "To be continued..."],
-      right: ["To be continued...", "To be continued..."],
+      left: [
+        <BlockInfo 
+          header="SOFTWARE ENGINEER AND SYSTEM ADMINISTRATOR"
+          period="01.2015 – present (Remote since 2022)"
+          description="PRAT ZZRK, Sobornyi Ave. 158-210, Zaporizhzhia, Ukraine"
+          list={[
+            "Development and maintenance of a working time tracking application (Delphi, Firebird Database)", 
+            "Maintenance of company website (HTML, CSS, Javascript, PHP)",
+            "Additional role as system administrator since 02.2017"
+          ]}
+        />,
+        <BlockInfo 
+          header="SOFTWARE DEVELOPER"
+          period="10.2011 – 12.2014"
+          description="Malenkij Paris GmbH, Moscow, Russia"
+          list={[
+            "Development of an online shop (PHP, HTML, CSS, Javascript)", 
+          ]}
+        />,
+        <BlockInfo 
+          header="SYSTEM ADMINISTRATOR"
+          period="12.2007 – 07.2011"
+          description="Municipal Company 'Nash Dim', Dniprorudne, Ukraine"
+          list={[
+            "Maintenance of local networks (FoxPro)", 
+            "Responsible for ~50 workstations", 
+            "FoxPro Software", 
+            "Part-time employment", 
+          ]}
+        />,
+        <BlockInfo 
+          header="SOFTWARE DEVELOPER"
+          period="11.2006 – 10.2009"
+          description="Arkob Ltd., Dniprorudne, Ukraine"
+          list={[
+            "Development and support of electricity consumption calculation software (Delphi, Firebird Database)", 
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo 
+          header="SOFTWARE DEVELOPER"
+          period="09.2000 – 07.2006"
+          description="Werkol GmbH, Moscow, Russia"
+          list={[
+            "Development and maintenance of an online shop for hygiene and cosmetics (Delphi, Interbase)", 
+          ]}
+        />,
+        <BlockInfo 
+          header="IT ASSISTANT AND SOFTWARE DEVELOPER"
+          period="09.1994 – 05.2000"
+          description="Wotinov Ltd., Moscow, Russia"
+          list={[
+            "Work in warehouse and packaging department", 
+            "First experience with FoxPro", 
+            "Development of order and warehouse management software in cosmetics wholesale", 
+          ]}
+        />,
+        <BlockInfo 
+          header="ELECTRICIAN"
+          period="07.1990 – 08.1994"
+          description="PRAT ZZRK, Mala Bilozerka, Ukraine"
+          list={[
+            "General maintenance and repair work", 
+            "Installation of lighting systems", 
+          ]}
+        />,
+        <BlockInfo 
+          header="ELECTRICIAN"
+          period="06.1989 – 05.1990"
+          description="Dairy Plant, Dniprorudne, Ukraine"
+          list={[
+            "Maintenance and repair of milk processing and cheese production equipment", 
+            "Replacement of spare parts", 
+          ]}
+        />,
+      ],
     },
     skills: {
-      title: "Skills",
+      title: "SKILLS",
       icon: Laptop,
-      left: ["To be continued...", "To be continued..."],
-      right: ["To be continued...", "To be continued..."],
+      left: [
+        <BlockInfo2 
+          title="Programming Languages"
+          list={[
+            "Javascript, Delphi, C",
+            "MySQL, Firebird Database",
+            "Node.js, Express.js, React",
+            "HTML, CSS"
+          ]}
+        />,
+        <BlockInfo2 
+          title="Professional Knowledge"
+          list={[
+            "Web Applications (Backend and Frontend)",
+            "SQL, relations, stored procedures, triggers etc.",
+            "Object-Oriented Programming",
+            "Git"
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo3 
+          title="Languages"
+          list={[
+            { title: "German", rating: 4 },
+            { title: "Ukrainian", rating: 6 },
+            { title: "Russian", rating: 6 },
+            { title: "English", rating: 3 },
+          ]}
+        />,
+        <BlockInfo3 
+          title="General IT"
+          list={[
+            { title: "MS-Office", rating: 5 },
+            { title: "Photoshop", rating: 4 },
+          ]}
+        />,
+      ],
     },
-    
     projects: {
       title: "Personal Projects",
       icon: Rocket,
-      left: ["To be continued...", "To be continued..."],
-      right: ["To be continued...", "To be continued..."],
+      left: [
+        <BlockInfo2 
+          title="FREELANCE WORK AS A PROGRAMMER"
+          description="Currently working on the Finping project, a SaaS service for monitoring currency and commodity markets. Using Node.js, Sequelize, Express.js, React and Tailwind CSS. Market data APIs: Yahoo Finance, CoinGecko and FXRates"
+          list={[
+            <a className="text-red-700" href="https://www.finping.space" target="_blank">https://www.finping.space</a>,
+            <a className="text-red-700" href="https://github.com/StrekanovAlexander/saas-finping" target="_blank">https://github.com/StrekanovAlexander/saas-finping</a>
+          ]}
+        />,
+      ],
+      right: ["..."],
     },
   },
 };

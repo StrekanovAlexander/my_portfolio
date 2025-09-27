@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useAppContext } from "../context/AppContext.jsx";
 import Section from "./Section.jsx";
+import LanguageSwitcher from "./LanguageSwitcher.jsx";
 import { sections } from "../data/sections.jsx";
 
 export default function Navigation() {
-  const { language } = useAppContext();
+  const { language, setLanguage } = useAppContext();
   const [active, setActive] = useState("education");
 
   const handleClick = (key) => {
@@ -33,6 +34,10 @@ export default function Navigation() {
               {langSections[key].title}
             </button>
           ))}
+          <LanguageSwitcher
+              currentLanguage={language}
+              onChange={setLanguage}
+            />
         </div>
 
         <div className="min-h-[300px]">

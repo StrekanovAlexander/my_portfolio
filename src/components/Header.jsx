@@ -1,11 +1,16 @@
+import { useEffect } from "react";
 import { Phone, AtSign } from "lucide-react";
 import { useAppContext } from "../context/AppContext.jsx";
 import { headerContent } from "../data/headerContent.js";
-import LanguageSwitcher from "./LanguageSwitcher.jsx";
+import { titles } from "../data/titlesPage.js";
 
 export default function Header() {
-  const { language, setLanguage } = useAppContext();
+  const { language } = useAppContext();
   const { name, intro, description } = headerContent[language];
+
+  useEffect(() => {
+    document.title = titles[language].title;
+  }, []);
   
   return (
     <header className="w-full">
@@ -15,9 +20,12 @@ export default function Header() {
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl tracking-tight text-gray-900 dark:text-gray-100">
               {name}
             </h1>
-            <h2 className="font-roboto font-normal text-xl md:text-2xl text-red-700 dark:text-red-400 my-3 uppercase">
+            <h2 className="font-roboto font-bold text-xl md:text-2xl text-red-700 dark:text-red-400 my-3 uppercase">
               { intro }
             </h2>
+            <p className="font-roboto font-normal text-md text-gray-600">
+              { description }
+            </p>
             <div className="my-6">
               <div className="flex items-center gap-3 text-lg font-roboto text-gray-600">
                 <Phone className="w-5 h-5" />0152 58403623
@@ -26,10 +34,6 @@ export default function Header() {
                 <AtSign />oleksandr.strekanov@gmail.com
               </div>
             </div>
-            <LanguageSwitcher
-              currentLanguage={language}
-              onChange={setLanguage}
-            />
           </div>
           <div className="flex items-start justify-center bg-white dark:bg-gray-900">
             <img

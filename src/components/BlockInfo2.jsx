@@ -5,7 +5,7 @@ export default function BlockInfo2({ title, description, list }) {
         { title }
       </h3>
       {description &&
-        <p className="font-roboto font-semibold text-gray-700 dark:text-gray-400 leading-relaxed">
+        <p className="font-roboto font-normal text-gray-700 dark:text-gray-400 leading-relaxed">
           { description }
         </p>
       }
