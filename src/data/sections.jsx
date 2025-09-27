@@ -186,7 +186,14 @@ export const sections = {
           ]}
         />,
       ],
-      right: ["..."],
+      right: [
+        <BlockInfo2 
+          title="Kurze Videos zur Theorie digitaler Automaten. Karnaugh-Diagramme usw."
+          list={[
+            <a className="text-red-700" href="https://www.youtube.com/channel/UCBcRsyBaLDJLvkBYpMF9oFA" target="_blank">Mein YouTube-Kanal</a>,
+          ]}
+        />,
+      ],
     },
   },
   ua: {
@@ -368,7 +375,14 @@ export const sections = {
           ]}
         />,
       ],
-      right: ["..."],
+      right: [
+        <BlockInfo2 
+          title="Невеликі відеоролики з теорії цифрових автоматів. Карти Карно тощо."
+          list={[
+            <a className="text-red-700" href="https://www.youtube.com/channel/UCBcRsyBaLDJLvkBYpMF9oFA" target="_blank">Мій YouTube канал</a>,
+          ]}
+        />,
+      ],
     },
   },
   en: {
@@ -551,10 +565,16 @@ export const sections = {
           ]}
         />,
       ],
-      right: ["..."],
+      right: [
+        <BlockInfo2 
+          title="Short videos on the theory of digital automata. Karnaugh maps, etc."
+          list={[
+            <a className="text-red-700" href="https://www.youtube.com/channel/UCBcRsyBaLDJLvkBYpMF9oFA" target="_blank">My YouTube channel</a>,
+          ]}
+        />,
+      ],
     },
   },
-
   ru: {
     education: {
       title: "ОБРАЗОВАНИЕ И КУРСЫ",
@@ -735,7 +755,14 @@ export const sections = {
           ]}
         />,
       ],
-      right: ["..."],
+      right: [
+        <BlockInfo2 
+          title="Небольшие видеоролики по теории цифровых автоматов. Карты Карно и т.д."
+          list={[
+            <a className="text-red-700" href="https://www.youtube.com/channel/UCBcRsyBaLDJLvkBYpMF9oFA" target="_blank">Мой YouTube канал</a>,
+          ]}
+        />,
+      ],
     },
   },
 };
