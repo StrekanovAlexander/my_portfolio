@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { Phone, AtSign } from "lucide-react";
+import { Phone, AtSign, MapPin } from "lucide-react";
 import { useAppContext } from "../context/AppContext.jsx";
 import { headerContent } from "../data/headerContent.js";
 import { titles } from "../data/titlesPage.js";
 
 export default function Header() {
   const { language } = useAppContext();
-  const { name, intro, description } = headerContent[language];
+  const { name, intro, description, location } = headerContent[language];
 
   useEffect(() => {
     document.title = titles[language].title;
@@ -27,11 +27,14 @@ export default function Header() {
               { description }
             </p>
             <div className="my-6">
-              <div className="flex items-center gap-3 text-lg font-roboto text-gray-600">
+              <div className="flex items-center gap-3 text-lg font-roboto font-bold text-gray-600 mb-1">
                 <Phone className="w-5 h-5" />0152 58403623
               </div>
-              <div className="flex items-center gap-3 text-lg font-roboto text-gray-600">
-                <AtSign />oleksandr.strekanov@gmail.com
+              <div className="flex items-center gap-3 text-lg font-roboto font-medium text-gray-600 mb-1">
+                <AtSign className="w-5 h-5" />oleksandr.strekanov@gmail.com
+              </div>
+              <div className="flex items-center gap-3 text-lg font-roboto font-medium text-gray-600 mb-1">
+                <MapPin className="w-5 h-5" />{ location }
               </div>
             </div>
           </div>

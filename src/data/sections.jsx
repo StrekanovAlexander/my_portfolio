@@ -554,4 +554,188 @@ export const sections = {
       right: ["..."],
     },
   },
+
+  ru: {
+    education: {
+      title: "ОБРАЗОВАНИЕ И КУРСЫ",
+      icon: GraduationCap,
+
+      left: [
+        <BlockInfo 
+          header="УЧАСТИЕ В ПРОГРАММЕ P.I.A. W.E.B."
+          period="08.2025 – настоящее время"
+          description="bfz gGmbH Бад-Киссинген"
+        />,
+        <BlockInfo 
+          header="ЯЗЫКОВОЙ И ИНТЕГРАЦИОННЫЙ КУРС"
+          period="07.2024 – 07.2025"
+          description="bfz gGmbH Бад-Киссинген"
+          list={[
+            "Сертификат немецкого языка B1", 
+            "Жизнь в Германии"
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo 
+          header="УЧЁБА ПО СПЕЦИАЛЬНОСТИ КОМПЬЮТЕРНАЯ ИНЖЕНЕРИЯ"
+          period="09.2011 – 05.2015"
+          description="Национальный технический университет, Запорожье, Украина"
+          list={[
+            "Диплом", 
+            "Упор на языки программирования C и Java",
+            "Цифровая автоматизация"
+          ]}
+        />,    
+        <BlockInfo 
+          header="КУРС ПРОГРАММИРОВАНИЯ НА C"
+          period="07.2002 – 08.2002"
+          description="Центр компьютерного обучения при Московском государственном техническом университете, Россия"
+        />,
+        <BlockInfo 
+          header="КУРС ПРОГРАММИРОВАНИЯ БАЗ ДАННЫХ НА DELPHI 4.0/5.0"
+          period="06.2001 – 07.2001"
+          description="Центр компьютерного обучения при Московском государственном техническом университете, Россия"
+        />
+      ]
+    },
+    experience: {
+      title: "ОПЫТ РАБОТЫ",
+      icon: Briefcase,
+      left: [
+        <BlockInfo 
+          header="ИНЖЕНЕР-ПРОГРАММИСТ И СИСТЕМНЫЙ АДМИНИСТРАТОР"
+          period="01.2015 – настоящее время (удалённо с 2022)"
+          description="ПРАТ ЗЗРК, просп. Соборный 158-210, Запорожье, Украина"
+          list={[
+            "Разработка и поддержка приложения для учёта рабочего времени (Delphi, Firebird Database)", 
+            "Поддержка корпоративного сайта (HTML, CSS, Javascript, PHP)",
+            "Дополнительно системный администратор с 02.2017"
+          ]}
+        />,
+        <BlockInfo 
+          header="РАЗРАБОТЧИК ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ"
+          period="10.2011 – 12.2014"
+          description="Malenkij Paris GmbH, Москва, Россия"
+          list={[
+            "Разработка интернет-магазина (PHP, HTML, CSS, Javascript)", 
+          ]}
+        />,
+        <BlockInfo 
+          header="СИСТЕМНЫЙ АДМИНИСТРАТОР"
+          period="12.2007 – 07.2011"
+          description="Коммунальное предприятие «Наш Дом», Днепрорудное, Украина"
+          list={[
+            "Поддержка локальных сетей (FoxPro)", 
+            "Около 50 рабочих мест", 
+            "ПО FoxPro", 
+            "Работа на полставки", 
+          ]}
+        />,
+        <BlockInfo 
+          header="РАЗРАБОТЧИК ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ"
+          period="11.2006 – 10.2009"
+          description="ООО «Аркоб», Днепрорудное, Украина"
+          list={[
+            "Разработка и поддержка ПО для расчёта потребления электроэнергии в архитектурной сфере (Delphi, Firebird Database)", 
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo 
+          header="РАЗРАБОТЧИК ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ"
+          period="09.2000 – 07.2006"
+          description="Werkol GmbH, Москва, Россия"
+          list={[
+            "Разработка и поддержка интернет-магазина для продажи гигиенической и косметической продукции (Delphi, Interbase)", 
+          ]}
+        />,
+        <BlockInfo 
+          header="IT-АССИСТЕНТ И ПРОГРАММИСТ"
+          period="09.1994 – 05.2000"
+          description="Фирма Wotinov, Москва, Россия"
+          list={[
+            "Работа на складе и упаковочном участке", 
+            "Первый опыт работы с FoxPro", 
+            "Разработка ПО для управления заказами и складом в оптовой торговле косметикой", 
+          ]}
+        />,
+        <BlockInfo 
+          header="ЭЛЕКТРИК"
+          period="07.1990 – 08.1994"
+          description="ПРАТ ЗЗРК, Малая Белозерка, Украина"
+          list={[
+            "Обслуживание и ремонт оборудования", 
+            "Монтаж осветительных систем", 
+          ]}
+        />,
+        <BlockInfo 
+          header="ЭЛЕКТРИК"
+          period="06.1989 – 05.1990"
+          description="Молочный завод, Днепрорудное, Украина"
+          list={[
+            "Обслуживание и ремонт оборудования для переработки молока и производства сыра", 
+            "Замена запчастей", 
+          ]}
+        />,
+      ],
+    },
+    skills: {
+      title: "НАВЫКИ",
+      icon: Laptop,
+      left: [
+        <BlockInfo2 
+          title="Языки программирования"
+          list={[
+            "Javascript, Delphi, C",
+            "MySQL, Firebird Database",
+            "Node.js, Express.js, React",
+            "HTML, CSS"
+          ]}
+        />,
+        <BlockInfo2 
+          title="Профессиональные знания"
+          list={[
+            "Веб-приложения (Backend и Frontend)",
+            "SQL, реляционные БД, процедуры, триггеры и т. д.",
+            "Объектно-ориентированное программирование",
+            "Git"
+          ]}
+        />,
+      ],
+      right: [
+        <BlockInfo3 
+          title="Языки"
+          list={[
+            { title: "Немецкий", rating: 4 },
+            { title: "Украинский", rating: 6 },
+            { title: "Русский", rating: 6 },
+            { title: "Английский", rating: 3 },
+          ]}
+        />,
+        <BlockInfo3 
+          title="Общие IT"
+          list={[
+            { title: "MS-Office", rating: 5 },
+            { title: "Photoshop", rating: 4 },
+          ]}
+        />,
+      ],
+    },
+    projects: {
+      title: "Личные проекты",
+      icon: Rocket,
+      left: [
+        <BlockInfo2 
+          title="ФРИЛАНС-РАБОТА КАК ПРОГРАММИСТ"
+          description="В настоящее время работаю над проектом Finping. Это SaaS-сервис для мониторинга валютных и товарных рынков. Использую Node.js, Sequelize, Express.js, React и Tailwind CSS. Источники данных: Yahoo Finance, CoinGecko и FXRates"
+          list={[
+            <a className="text-red-700" href="https://www.finping.space" target="_blank">https://www.finping.space</a>,
+            <a className="text-red-700" href="https://github.com/StrekanovAlexander/saas-finping" target="_blank">https://github.com/StrekanovAlexander/saas-finping</a>
+          ]}
+        />,
+      ],
+      right: ["..."],
+    },
+  },
 };

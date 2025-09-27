@@ -1,11 +1,14 @@
 export const titles = {
     de: {
-        title: "Lebenslauf: Fullstack Entwickler",
+        title: "Lebenslauf: Fullstack-Entwickler",
     },
     ua: {
-        title: "Резюме: Fullstack розробник",
+        title: "Резюме: Fullstack-розробник",
     },
     en: {
-        title: "Resume: Fullstack Developer",
+        title: "Resume: Fullstack-developer",
+    },
+    ru: {
+        title: "Резюме: Fullstack-разработчик ",
     }
 }  

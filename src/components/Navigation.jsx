@@ -18,29 +18,33 @@ export default function Navigation() {
 
   return (
     <section className="w-full">
-      <div className="max-w-5xl mx-auto px-6 py-2">
+      <div className="max-w-5xl mx-auto py-2">
 
-        <div className="flex justify-center gap-6 mb-8">
-          {Object.keys(langSections).map((key) => (
-            <button
-              key={key}
-              onClick={() => handleClick(key)}
-              className={`uppercase font-sans font-bold tracking-wide px-3 py-1 border-b-2 transition-colors ${
-                active === key
-                  ? "border-red-700 dark:border-red-500 text-red-700 dark:text-red-500"
-                  : "border-transparent hover:border-gray-400 text-gray-900 dark:text-gray-100"
-              }`}
-            >
-              {langSections[key].title}
-            </button>
-          ))}
-          <LanguageSwitcher
+        <div className="flex justify-between mb-8">
+          <div className="flex justify-center gap-6">
+            {Object.keys(langSections).map((key) => (
+              <button
+                key={key}
+                onClick={() => handleClick(key)}
+                className={`uppercase font-sans font-bold tracking-wide px-3 py-1 border-b-2 transition-colors ${
+                  active === key
+                    ? "border-red-700 dark:border-red-500 text-red-700 dark:text-red-500"
+                    : "border-transparent hover:border-gray-400 text-gray-900 dark:text-gray-100"
+                }`}
+              >
+                {langSections[key].title}
+              </button>
+            ))}
+          </div>
+          <div className="flex items-center">
+            <LanguageSwitcher
               currentLanguage={language}
               onChange={setLanguage}
             />
+          </div>  
         </div>
 
-        <div className="min-h-[300px]">
+        <div className="min-h-[300px] px-2">
           <Section
             title={langSections[active].title}
             icon={langSections[active].icon}
